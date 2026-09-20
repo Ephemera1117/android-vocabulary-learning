@@ -52,6 +52,8 @@ Room DAO、DataStore、Compose、以及一个 AI Provider 抽象。这部分**�
 2. 在 `AppDatabase` 里注册 5 个 Entity + 5 个 DAO
 3. 按 [`core/README.md`](core/README.md) 的示例开始读写
 
+[`core/README.md`](core/README.md) 里有完整的手把手教程：怎么拷文件、改包名、加 Gradle 依赖、注册数据库、建书灌词出题判卡，每一步都有可以直接贴进项目的代码。**如果你不确定从哪开始，先打开那个文件。**
+
 适合：你的项目不是 Rikkahub、你想自己写 UI、你只想要一份能用的数据结构参考。
 
 ### 场景 2：我想要完整功能
@@ -62,6 +64,8 @@ Room DAO、DataStore、Compose、以及一个 AI Provider 抽象。这部分**�
 4. 想要 AI 对话就看 [`docs/03-ai-teacher.md`](docs/03-ai-teacher.md)
 5. **动手前先看 [`docs/04-pitfalls.md`](docs/04-pitfalls.md)** —— 那是全文最省时间的部分
 
+[`docs/README.md`](docs/README.md) 是这一层的总览，里面说清了每篇教程讲什么、大概要看多久、两种集成方式（照搬 vs 只用思路）怎么选。`docs/snippets/` 文件夹里还有三个可以直接取用的代码片段（数据库注册、依赖注入、断点续学），**是从 core 到能跑之间最容易漏掉的接线步骤**。
+
 适合：你的项目是 Rikkahub 或类似架构、你想让 AI 看到学习进度并参与进来。
 
 ### 场景 3：我只想弄一本词库
@@ -70,8 +74,9 @@ Room DAO、DataStore、Compose、以及一个 AI Provider 抽象。这部分**�
 node tools/wordlist/build-wordlist.mjs --book 四级 --out cet4.csv
 ```
 
-把 `cet4.csv` 传到手机，在 App 里「单词 → 导入」选中它。详见
-[`tools/wordlist/README.md`](tools/wordlist/README.md)。
+把 `cet4.csv` 传到手机，在 App 里「单词 → 导入」选中它。
+
+[`tools/wordlist/README.md`](tools/wordlist/README.md) 里有详细说明：需要什么环境（Node 18+，不用装依赖）、有哪些词书可选、怎么切单元、怎么转自己整理的表格、生成出来的 CSV 长什么样。
 
 ---
 
