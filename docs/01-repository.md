@@ -340,7 +340,7 @@ fun StudySnapshot.toBriefText(): String = buildString {
 
 1. **多本词库时报哪本** —— 报 `lastStudiedAt` 最新那本，不要全报（提示词会爆长）
 2. **「今天没记住的词」要不要带上** —— 带上很有用（AI 能针对性讲解），但它是**很长的列表**，
-   而且每次都喂过去既费 token，也会让 AI 一直揪着这几个词不放。我们的选择是：
+   而且每次都喂过去既费 token，也会让 AI 一直揪着这几个词不放。我的选择是：
    **AI 对话带上，主窗口注入不带**。
 
 ```kotlin
@@ -406,7 +406,7 @@ suspend fun restoreBook(vocabId: Long) {
 
 ## 九、注入依赖
 
-我们的版本用 Koin：
+我的版本用 Koin：
 
 ```kotlin
 single {
@@ -424,7 +424,7 @@ single {
 用 Hilt 的话就是一个 `@Singleton` + `@Inject constructor`。
 
 > ⚠️ **不要给 ViewModel 的构造函数塞 `Application` 或 `Context`。**
-> 我们踩过这个坑，三种写法全崩（详见 [04-pitfalls.md](04-pitfalls.md)）。
+> 我踩过这个坑，三种写法全崩（详见 [04-pitfalls.md](04-pitfalls.md)）。
 > Repository 拿 Context 没问题（它是单例），ViewModel 拿就不行 —— 要 Context 就在
 > Composable 里拿 `LocalContext` 传进去。
 
