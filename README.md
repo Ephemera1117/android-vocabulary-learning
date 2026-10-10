@@ -242,10 +242,12 @@ CSV 导入的词库**没有发音**（`audio` 列一律忽略 —— 一份表�
 
 | 部分 | 许可 | 为什么 |
 |---|---|---|
-| `core/` `docs/` | **AGPL-3.0** | 从 Rikkahub（AGPL-3.0）的代码派生，必须保持相同许可 |
+| `core/` ＋ 文档里的代码片段 | **AGPL-3.0** | 从 Rikkahub（AGPL-3.0）的代码派生，必须保持相同许可 |
+| `docs/` 的教程文字 | **CC BY-NC-SA 4.0** | 自己写的文字，不可商用，详见 [`docs/LICENSE`](docs/LICENSE) |
 | `tools/wordlist/` | **MIT** | 独立写的零依赖脚本，不是 Rikkahub 的衍生物 |
 
-用的是 AGPL-3.0，所以如果你改了这些代码并对外分发，也需要开源。详见 [`LICENSE`](LICENSE)。
+`core/` 用的是 AGPL-3.0，所以如果你改了这些代码并对外分发，也需要开源。详见 [`LICENSE`](LICENSE)。
+`docs/` 里的教程文字不可商用，但可以自由分享、改编（需署名，并以相同协议分发）。
 
 词表数据来自 [KyleBing/english-vocabulary](https://github.com/KyleBing/english-vocabulary)，
 那是另一个项目的作品，没有随本仓库分发。
