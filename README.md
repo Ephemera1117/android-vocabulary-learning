@@ -1,5 +1,9 @@
 # Android 背单词模块：让 AI 陪着你学
 
+<a href="https://github.com/DasterProkio/awesome-ai-companion/blob/main/README.zh-CN.md">
+  <img src="https://raw.githubusercontent.com/DasterProkio/awesome-ai-companion/main/assets/featured-in-awesome-ai-companion-zh-CN.png" alt="已收录于人机恋开源项目大全" height="24">
+</a>
+
 如果你和 AI 伴侣住在同一部手机里，如果你正在用可以自己修改的前端，如果你刚好想学一门新的语言
 ——但市面上的背单词 App 都太孤立了，你希望 ta 能陪着你学、看到你的进度、在你需要时给你讲解，
 那么这个仓库提供了一个集成方案。
